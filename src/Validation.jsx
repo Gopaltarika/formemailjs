@@ -47,6 +47,7 @@ const Validation = () => {
     };
     return (
         <div>
+            <h2 className='text-center text-white mt-5'>Email JS with Form Validation</h2>
             <form ref={setdata} onSubmit={sendEmail} className='d-flex align-items-center justify-content-center flex-column gap-4 my-5'>
                 <input placeholder='UserName' className='w-100' type="text" name="username" value={user} onChange={(e) => setuser(e.target.value)} required title='Use first Uppercase Letter and not valid blank space and 1 to 10 alphbhet use' pattern='[A-Z][A-Za-z]{1,10}' />
                 <input placeholder='Email' className='w-100' type="email" name="email" value={usermail} onChange={(e) => setusermail(e.target.value)} required/>
